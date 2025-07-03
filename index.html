@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login / Register</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!--------------------------------------------------------------------------->
+  <body>
     <div class="wrapper">
+      <div class="form-header">
         <div class="title">
-            Login
+          <div class="login-title">Login</div>
+          <div class="register-title">Register</div>
         </div>
-        <div class="form">
-            <form>
-                <input type="email" required id="email">
-                <label for="email">Email</label>
-                <br>
-                <input type="password" required id="pass">
-                <label for="pass">Password</label>
-            </form>
+      </div>
+
+      <form action="#" class="login-form" autocomplete="off">
+        <div class="input-box">
+          <input type="email" id="log-email" class="input-field" required />
+          <label for="log-email"> Email </label>
+          <i class="bx bx-envelope"></i>
         </div>
+
+        <div class="input-box">
+          <input type="password" id="log-pass" class="input-field" required />
+          <label for="log-pass"> Password </label>
+          <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="form-other">
+          <div class="other-1"></div>
+          <div class="other-2">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <div class="input-box">
+          <button class="submit-btn" id="signin-btn">
+            Sign In <i class="bx bx-log-in"></i>
+          </button>
+        </div>
+        <div class="switch-form">
+          Don't have an account?
+          <a href="#" onclick="">Register!</a>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
