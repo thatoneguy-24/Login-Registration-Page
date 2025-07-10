@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login / Register</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -23,14 +22,26 @@
 
       <form action="#" class="login-form" autocomplete="off">
         <div class="input-box">
-          <input type="email" id="log-email" class="input-field" required />
-          <label for="log-email"> Email </label>
+          <input
+            type="email"
+            id="log-email"
+            class="input-field"
+            required
+            placeholder=" "
+          />
+          <label for="log-email" class="label"> Email </label>
           <i class="bx bx-envelope"></i>
         </div>
 
         <div class="input-box">
-          <input type="password" id="log-pass" class="input-field" required />
-          <label for="log-pass"> Password </label>
+          <input
+            type="password"
+            id="log-pass"
+            class="input-field"
+            required
+            placeholder=" "
+          />
+          <label for="log-pass" class="label"> Password </label>
           <i class="bx bx-lock-alt"></i>
         </div>
         <div class="form-other">
@@ -40,15 +51,70 @@
           </div>
         </div>
         <div class="input-box">
-          <button class="submit-btn" id="signin-btn">
-            Sign In <i class="bx bx-log-in"></i>
-          </button>
+          <button class="submit-btn" id="signin-btn">Sign In</button>
         </div>
         <div class="switch-form">
-          Don't have an account?
-          <a href="#" onclick="">Register!</a>
+          <span>
+            Don't have an account?
+            <a href="#" onclick="changeToRegister()">Register.</a>
+          </span>
+        </div>
+      </form>
+
+      <form action="#" class="register-form" autocomplete="off">
+        <div class="input-box">
+          <input
+            type="text"
+            id="reg-username"
+            class="input-field"
+            required
+            placeholder=" "
+          />
+          <label for="reg-username" class="label"> Username </label>
+          <i class="bx bx-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input
+            type="email"
+            id="reg-email"
+            class="input-field"
+            required
+            placeholder=" "
+          />
+          <label for="reg-email" class="label"> Email </label>
+          <i class="bx bx-envelope"></i>
+        </div>
+
+        <div class="input-box">
+          <input
+            type="password"
+            id="reg-pass"
+            class="input-field"
+            required
+            placeholder=" "
+          />
+          <label for="reg-pass" class="label"> Password </label>
+          <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="form-other">
+          <div class="other-1">
+            <input type="checkbox" id="agree" />
+            <label for="agree">I agree to the terms & conditions</label>
+          </div>
+          <div class="other-2"></div>
+        </div>
+        <div class="input-box">
+          <button class="submit-btn" id="signup-btn">Sign Up</button>
+        </div>
+        <div class="switch-form">
+          <span>
+            Already have an account?
+            <a href="#" onclick="changeToLogin()">Login.</a>
+          </span>
         </div>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
